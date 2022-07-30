@@ -36,6 +36,7 @@ WHERE purch_amt >(SELECT  AVG(purch_amt) FROM orders);
 
 #6.Write a query to determine the Nth (Say N=5) highest purch_amt from Orders table.
 #while importing the order table, I have changed the datatype as "bigint" from "text".
+
 select * from orders order by purch_amt desc
 limit 1
 offset 4;
